@@ -1,0 +1,96 @@
+/* 🔥 Make table blend with background */
+.table {
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table thead {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.table td,
+.table th {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 🔥 Input fields (bold + dark) */
+.form-control {
+  background: rgba(0, 0, 0, 0.4) !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border-radius: 8px;
+}
+
+.form-control:focus {
+  border: 2px solid #00c6ff !important;
+  box-shadow: none !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* 🔥 Labels */
+label {
+  color: #ddd;
+}
+
+/* 🔥 Buttons */
+.btn-success {
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  border: none;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #36d1dc, #5b86e5);
+  border: none;
+}
+
+.btn-danger {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  border: none;
+}
+
+/* 🔥 Card spacing fix */
+.container {
+  background: transparent !important;
+}
+
+/* 🔥 Form container (glass style) */
+.custom-form {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔥 Input fields */
+.form-control {
+  background: rgba(0, 0, 0, 0.5) !important;
+  border: 2px solid rgba(255, 255, 255, 0.25) !important;
+  color: white !important;
+  border-radius: 8px;
+}
+
+/* 🔥 Placeholder text */
+.form-control::placeholder {
+  color: #bbb;
+}
+
+/* 🔥 On focus */
+.form-control:focus {
+  border: 2px solid #00c6ff !important;
+  background: rgba(0, 0, 0, 0.7) !important;
+  box-shadow: none !important;
+  color: white !important;
+}
+
+/* 🔥 Labels */
+label {
+  color: #ddd;
+  font-weight: 500;
+}
+
+/* 🔥 Fix white background of right panel */
+.col-md-5 {
+  background: transparent !important;
+}
