@@ -31,14 +31,14 @@ jobs:
       # Build & Push Backend
       - name: Build Backend
         run: |
-          docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/backend:latest ./backend
-          docker push ${{ secrets.ACR_LOGIN_SERVER }}/backend:latest
+          docker build -t "${{ secrets.ACR_LOGIN_SERVER }}/backend:latest" ./backend
+          docker push "${{ secrets.ACR_LOGIN_SERVER }}/backend:latest"
 
       # Build & Push Frontend
       - name: Build Frontend
         run: |
-          docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/frontend:latest ./frontend
-          docker push ${{ secrets.ACR_LOGIN_SERVER }}/frontend:latest
+          docker build -t "${{ secrets.ACR_LOGIN_SERVER }}/frontend:latest" ./frontend
+          docker push "${{ secrets.ACR_LOGIN_SERVER }}/frontend:latest"
 
       # Deploy Backend
       - name: Deploy Backend
