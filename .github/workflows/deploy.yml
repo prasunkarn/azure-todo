@@ -22,10 +22,7 @@ jobs:
 
       # Login to ACR
       - name: Docker Login
-        run: |
-          docker login ${{ secrets.ACR_LOGIN_SERVER }} \
-          -u ${{ secrets.ACR_USERNAME }} \
-          -p ${{ secrets.ACR_PASSWORD }}
+        run: docker login ${{ secrets.ACR_LOGIN_SERVER }} -u ${{ secrets.ACR_USERNAME }} -p ${{ secrets.ACR_PASSWORD }}
 
       # Build & Push Backend
       - name: Build Backend
