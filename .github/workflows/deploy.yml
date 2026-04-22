@@ -21,9 +21,13 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       # Login to ACR
-      - name: Docker Login
-        run: docker login ${{ secrets.ACR_LOGIN_SERVER }} -u ${{ secrets.ACR_USERNAME }} -p ${{ secrets.ACR_PASSWORD }}
-
+      - name: Login to ACR
+        uses: azure/docker-login@v1
+        with:
+          login-server: ${{ secrets.ACR_LOGIN_SERVER }}
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
+          
       # Build & Push Backend
       - name: Build Backend
         run: |
